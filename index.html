@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio / Jackson Silva</title>
+    <meta name="author" content="Jackson Silva">
+    <meta name="description" content="Portfólio">
+    <meta name="keywords" content="profile Portfólio job web develop">
+    <link rel="shortcut icon" href="img/undraw_the_world_is_mine_nb0e.png">
+
+    <!--link font awesome-->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+
+       <!--fonts-->
+    <!--font-family: 'Cabin', sans-serif;-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    
+    <!--font-family: 'Lobster', cursive;-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <!--style css-->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/moblie.css">
+    
+</head>
+<body id="goToHome">
+    <!--Header-->
+    <header class="header">
+        <div class="header__icon">
+            <a href="#goToAboutMe"><img src="img/undraw_stars_re_6je7.png"></a>
+        </div>
+
+        <!--Menu btn Mobile-->
+        <div class="menu-btn">
+            <div class="menu-btn__burger"></div>
+        </div>
+
+        <nav class="header__nav">
+            <ul class="nav__listOption">
+                <li><a href="#goToHome">Home</a></li>
+                <li><a href="#goToAboutMe">About me</a></li>
+                <li><a href="#gotToSkill">Skill</a></li>
+                <li><a href="#goToProject">Project</a></li>
+                <li><a href="#goToFooter">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header__groupText">
+            <p>Bem Vindo!</p>
+        </div>
+       
+    </header>
+
+    <!--About Me-->
+    <section  class="sectionAbout">
+        <div class="group-photo">
+            <div class="thumbs-photo"></div>
+                <img src="img/perfil.JPEG" alt="foto de perfil" id="goToAboutMe">
+        </div>
+        <article class="sectionAbout__article">
+            <h2 class="sectionAbout__subtitulo">
+                Hellow, I am
+                <span class="destaque">Jackson</span>
+            </h2>
+            <p class="paragrafo">
+                Sou formado em Análise e Desenvolvimento de Sistemas e atualmente estudante 
+                de desenvolvimento web Full Stack na Trybe, atualmente meu foco principal 
+                é desenvolvimento web Full Stack , e um dos meus principais objetivos 
+                no momento é dominar as tecnologias JavaScript, React. JS, 
+                Next JS, Docker e Phyton e demais tecnologias, frameworks e metodologias relacionados!
+            </p>
+
+            <ul class="ulContact">
+                <li><a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a></li>
+                <li><a href="https://github.com/cajui54"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/jackson-silva-50641b184/"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+
+        </article>
+
+    </section>
+
+    <!--About my Skill-->
+    <section class="sectionSkill" id="gotToSkill"> 
+        <h2 class="subtitulo">My Skills</h2>
+        <h3 class="subtitulo3">My Experties</h3>
+
+        <div class="group">
+            <div class="group__skill">
+                <dl class="list-skill">
+                    <dt>Front-End</dt>
+                    <dd>
+                        <!--container HTML-->
+                        <div class="group-icon">
+                            <i class="fab fa-html5"></i>
+                            <h3 class="group-skill__subtitulo">HTML</h3> 
+                       </div>
+    
+                       <!--container CSS-->
+                       <div class="group-icon">
+                            <i class="fab fa-css3-alt"></i>
+                            <h3 class="group-skill__subtitulo">CSS</h3> 
+                        </div>
+    
+                        <!--container JS-->
+                       <div class="group-icon">
+                            <i class="fab fa-js-square"></i>
+                            <h3 class="group-skill__subtitulo">JavaScript</h3> 
+                       </div>
+                    </dd>
+                    
+                    <dt>Repositório</dt>
+                    <dd>
+                        <div class="group-icon">
+                            <i class="fab fa-git-square"></i>
+                            <h3 class="group-skill__subtitulo">Git</h3>
+                       </div>
+    
+                       <div class="group-icon">
+                            <i class="fab fa-github"></i>
+                            <h3 class="group-skill__subtitulo">Github</h3> 
+                        </div>
+                    </dd>
+                    <dt>Linguagem de Programação</dt>
+                    <dd>
+                        <div class="group-icon">
+                            <i class="fab fa-cuttlefish">#</i>
+                            <h3 class="group-skill__subtitulo">CSharp </h3>
+                       </div>
+                    </dd>
+                </dl>
+
+            </div>
+            <!--Container img skill-->
+            <div class="group__skilImg"></div>
+            
+        </div>
+    </section>
+
+    <!--Project recent-->
+    <section class="sectionRecent" id="goToProject">
+        <h2 class="subtitulo">Recent</h2>
+        <h3 class="subtitulo3">Recent Doing Project Design</h3>
+
+        <div class="sectionRecent__cards">
+            <!--Project IMC-->
+            <div class="card-project">
+                <img class="card__img" src="img/fitness.jpg">
+             
+                <div class="group__cardText">
+                    <h2 class="card__subtitulo">Calculadora IMC</h2>
+                    <ul class="cards__icon">
+                        <li><i class="fab fa-html5"></i></li>
+                        <li><i class="fab fa-css3-alt"></i></li>
+                        <li><i class="fab fa-js-square"></i></li>
+                    </ul>
+                    <p class="card__paragrafo">
+                        Tudo sobre IMC,  mais informações, Links abaixo:
+                    </p>
+                    
+                    <div class="group-links-project">
+                        <a href="https://github.com/cajui54/Calculadora-IMC" class="links-project">
+                            <i class="fab fa-github-square"></i>
+                        </a>
+                        <a href="http://imcjks.ga/" class="links-project">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--Project FII-->
+            <div class="card-project">
+                <img class="card__img" src="img/predio1.jpg">
+                
+                <div class="group__cardText">
+                    <h2 class="card__subtitulo">Simulador de FIIS</h2>
+                    <ul class="cards__icon">
+                        <li><i class="fab fa-html5"></i></li>
+                        <li><i class="fab fa-css3-alt"></i></li>
+                        <li><i class="fab fa-js-square"></i></li>
+                    </ul>
+                    <p class="card__paragrafo">
+                        Calculadora de dividendo, Links abaixo.
+                    </p>
+                    
+                    <div class="group-links-project">
+                        <a href="https://github.com/cajui54/SimuladorDividendoFundoImobiliario" class="links-project">
+                            <i class="fab fa-github-square"></i>
+                        </a>
+                        <a href="https://simulador-dividendo-fundo-imobiliario-zeta.vercel.app/" class="links-project">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--Stoke & REIT's-->
+            <div class="card-project">
+                <img class="card__img" src="img/imgDolar.jpg">
+               
+                <div class="group__cardText">
+                    <h2 class="card__subtitulo">Stoke & REIT's</h2>
+                    <ul class="cards__icon">
+                        <li><i class="fab fa-html5"></i></li>
+                        <li><i class="fab fa-css3-alt"></i></li>
+                        <li><i class="fab fa-js-square"></i></li>
+                    </ul>
+                    <p class="card__paragrafo">
+                        Investimento em Stoke, ETFs e REIT's, Links abaixo.
+                    </p>
+                    
+                    <div class="group-links-project">
+                        <a href="https://github.com/cajui54/Stoke-REITS-Simulador" class="links-project">
+                            <i class="fab fa-github-square"></i>
+                        </a>
+                        <a href="https://stoke-reits-simulador-three.vercel.app/" class="links-project">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--Project Infusion-->
+            <div class="card-project">
+                <img class="card__img" src="img/code.jpg">
+               
+                <div class="group__cardText">
+                    <h2 class="card__subtitulo">Clone</h2>
+                    <ul class="cards__icon">
+                        <li><i class="fab fa-html5"></i></li>
+                        <li><i class="fab fa-css3-alt"></i></li>
+                        <li><i class="fab fa-js-square"></i></li>
+                    </ul>
+                    <p class="card__paragrafo">
+                        Clone de uma página da web Infusion. Links abaixo
+                    </p>
+                    <div class="group-links-project">
+                        <a href="https://github.com/cajui54/Infusion" class="links-project">
+                            <i class="fab fa-github-square"></i>
+                        </a>
+                        <a href="https://clone-infusion.vercel.app/" class="links-project">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="sectionSkill" id="gotToSkill"> 
+        <h2 class="subtitulo">Cursos</h2>
+        <h3 class="subtitulo3">Cursos Extracurriculares</h3>
+        <div class="group">
+            <ul class="list-courses">
+                <li>Web Design - HTML5, CSS3 & JavaScript</li>
+                <li>Linguagem de Programação C#</li>
+                <li>Microsoft Office</li>
+                <li>Cursando: React.JS</li>
+            </ul>
+            <div class="img-draw"></div>
+        </div>
+
+       
+    </section>
+    <footer class="footer" id="goToFooter">
+        <h3 class="footer__subtitulo">Contact me</h3>
+        <ul class="footer-list-icon">
+            <li><a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a></li>
+                <li><a href="https://github.com/cajui54"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/jackson-silva-50641b184/"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+    </footer>
+    <!--JavaScript-->
+    <script type="text/JavaScript" src="js/main.js"></script>
+</body>
+</html>
