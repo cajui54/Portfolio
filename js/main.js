@@ -11,7 +11,6 @@ menuBtn.addEventListener('click', ()=>{
 
 menuLink.forEach((link)=>{
     link.addEventListener('click', (e)=>{
-        
        showMenu();
     });
 });

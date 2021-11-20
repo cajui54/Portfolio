@@ -114,6 +114,7 @@ body{
 .sectionAbout{
     background-color: #f7f7f7;
     width: 100%;
+    padding: 10 0;
     position: relative;
     margin: 150px 0;
 }
@@ -182,6 +183,9 @@ body{
 .sectionSkill{
     width: 100%;
 }
+.group__skill{
+    margin-top: 20px;
+}
 .subtitulo{
     font-size: 25px;
     margin-left: 50px;
@@ -190,73 +194,63 @@ body{
 .subtitulo3{
     font-size: 40px;
     margin-left: 50px;
+    margin-bottom: 50px;
 }
-.group{
-    width: 90%;
-    margin: 50px auto;
-}
-.group__skill{
-    width: 90%;
-    margin: 50px auto;
-}
+/*lista de skills*/
 .list-skill{
-    width: 100%;
-}
-.list-skill dt{
-    background-color:#2adabc;
     width: 80%;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 10px;
-    color: #fff;
-    font-size: 20px;
-    letter-spacing: 1.8px;
-}
-.list-skill dd{
-    background-color: #e9e6e6;
-    border-radius: 10px;
-    margin-bottom: 70px;
-    padding: 10px 5px;
+    margin: 5px auto;
+    list-style: none;
     display: flex;
-    height: 90px;
+    align-items: center;
+    justify-content: space-between
 }
-.group-icon{
-    
+.list-skill li{
+    margin: 30px 0;
+    font-size: 28px;
+    cursor: pointer;
     width: 100px;
-    text-align: center;
-    margin-left: 10px;
-    /*color: #5b5f5f;*/
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 3px solid #39bfbd;
+    border-top: none;
+    transition: all .7s ease-in;
+    
 }
-.fa-html5{
-    color: #e06061;
+.list-skill li:hover{
+    transform: scale(1.1);
 }
-.fa-css3-alt{
-    color: #416cdf;
+.list-skill i{
+    color:#39bfbd;
+    font-size: 35px;
+    margin-top: 3px;
 }
-.fa-js-square{
-    color: #abb83d;
+.list-skill i:nth-child(3){
+    font-size: 18px;
+}
+.title-skills{
+    color: #39bfbd;
+    font-size: 19px;
+    font-weight: bold;
 }
 .fa-cuttlefish{
-    background-color: #670b7e;
-    padding: 5px;
-    border-radius: 50px;
-    color: #fff;
+    margin-bottom: 5px;
 }
-.group-icon i{
-    margin: 10px 0 10px 0;
-    font-size: 45px;
-    
-}
+
+
+
 .group__skilImg{
-    width: 90%;
+    width: 80%;
     margin: 50px auto;
-    height: 200px;
-    background-image: url('../img/code.jpg');
-    background-attachment: fixed;
+    height: 750px;
+    background-image: url('../img/M01.png');
     background-size: cover;
-    filter:brightness(.7);
-    background-position-x: -100px;
     border-radius: 10px;
+    box-shadow: 0  0 5px #4F4F4F;
     
 }
 .sectionRecent{
@@ -334,7 +328,7 @@ body{
 .footer{
     width: 100%;
     height: 100px;
-    background-color: #2adabc;
+    background-color: #39bfbd;
     box-shadow: 0 -2px 10px #5b5f5f;
     padding-bottom: 50px;
 }
@@ -420,9 +414,23 @@ section{
     .subtitulo3{
         font-size: 50px;
     } 
+    .group__skill{
+
+        margin-left: 20px;
+        width: 70%;
+
+    }
     .list-skill{
-        width: 80%;
-        margin: 50px 0 50px 30px;
+       margin-left: 20px;
+    }
+    .group__skilImg{
+        width: 400px;
+        margin: 200px auto;
+    }
+    
+    .list-skill{
+        width: 60%;
+        
     } 
     /*section project*/
     .card-project{
@@ -462,14 +470,33 @@ section{
     .card-project{
         width: 50%;
         height: 550px;
+       
         
+    }
+    .list-skill{
+        width: 450px;
+        margin-left: 20px;
+    }
+    .group__skilImg{ 
+        margin-top: 10px;
+        background-image: url('../img/code.jpg');
+        height: 450px;
+        width: 750px;
+        margin-left: 2px;
+        box-shadow: none;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        
+    }
+    .list-skill li{
+        margin: 20 10px;
     }
     .list-courses{
         width: 40%;
         height: 400px;
     }
     .list-courses li{
-        margin: 10px 50px;
+        margin: 10px 60px;
         font-size: 25px;
         padding: 20px 10px;
         border-radius: 10px;
@@ -503,9 +530,8 @@ section{
        width: 40%;
    }
    .group__skilImg{
-       height: 500px;
-       width: 50%;
-       opacity: .7;
+      
+        
    }
   
    .sectionRecent__cards{
