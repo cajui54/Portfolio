@@ -26,3 +26,20 @@ function showMenu(){
         menuOpen = false;
     }
 }
+
+/*nav JS*/
+
+const menuitems = document.querySelectorAll('.nav__listOption a');
+const scrollToIdOnClick = (event) => {
+    event.preventDefault();
+    const element = event.target;
+    const id = element.getAttribute('href');
+    const to = document.querySelector(id).offsetTop;
+    window.scroll({
+        top: to - 115,
+        behavior: "smooth",
+    });
+}
+menuitems.forEach((item) =>{
+    item.addEventListener('click', scrollToIdOnClick);
+});
